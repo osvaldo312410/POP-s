@@ -144,7 +144,7 @@ def show_index():
 @app.route('/assistenciais')
 def assistenciais():
 
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/assistenciais')
     pdfs = response.json()
     return render_template('assistenciais.html', pdfs=pdfs)
 
@@ -152,7 +152,7 @@ def assistenciais():
 
 @app.route('/medicacoes')
 def medicacoes():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/medicacoes')
     pdfs = response.json()
 
     return render_template('medicacoes.html', pdfs=pdfs)
@@ -161,7 +161,7 @@ def medicacoes():
 
 @app.route('/bloco_cirurgico')
 def bloco_cirurgico():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/bloco_cirurgico')
     pdfs = response.json()
 
     return render_template('bloco_cirurgico.html', pdfs=pdfs)
@@ -170,7 +170,7 @@ def bloco_cirurgico():
 
 @app.route('/cme')
 def cme():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/cme')
     pdfs = response.json()
 
     return render_template('cme.html', pdfs=pdfs)
@@ -179,7 +179,7 @@ def cme():
 
 @app.route('/hemoterapia')
 def hemoterapia():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/hemoterapia')
     pdfs = response.json()
 
     return render_template('hemoterapia.html', pdfs=pdfs)
@@ -188,7 +188,7 @@ def hemoterapia():
 
 @app.route('/limpeza_desinfeccao')
 def limpeza_desinfeccao():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/limpeza_desinfeccao')
     pdfs = response.json()
 
     return render_template('limpeza_desinfeccao.html', pdfs=pdfs)
@@ -197,7 +197,7 @@ def limpeza_desinfeccao():
 
 @app.route('/funcao_respiratoria')
 def funcao_respiratoria():
-    response = requests.get('http://192.168.1.25:5099/pdfs')
+    response = requests.get('http://192.168.1.25:5099/funcao_respiratoria')
     pdfs = response.json()
 
     return render_template('funcao_respiratoria.html', pdfs=pdfs)

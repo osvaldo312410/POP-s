@@ -704,7 +704,7 @@
                 .then(data => {
                     if (data.selected_pdf) {
                         pdfSelector.value = data.selected_pdf;
-                        pdfFrame.src = `http://192.168.1.140:5088/farmacia/${data.selected_pdf}`; // Ajuste o caminho conforme necessário
+                        pdfFrame.src = `http://192.168.1.25:5099/farmacia/${data.selected_pdf}`; // Ajuste o caminho conforme necessário
                     }
                 })
                 .catch(error => console.error('Erro ao carregar a seleção do PDF:', error));
@@ -737,7 +737,7 @@
                 .catch(error => console.error('Erro ao salvar a seleção do PDF:', error));
 
                 // Atualizar o iframe com o PDF selecionado
-                pdfFrame.src = `http://192.168.1.140:5088/farmacia/${selectedPdf}`;  // Ajuste o caminho conforme necessário
+                pdfFrame.src = `http://192.168.1.25:5099/farmacia/${selectedPdf}`;  // Ajuste o caminho conforme necessário
             });
         });
     });
