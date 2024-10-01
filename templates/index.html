@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Página Inicial</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="static/assets/css/meyawo.css">
+    <link rel="stylesheet" href="../static/assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#" >Hospital Municipal 25 De Maio</a>
+
+            <ul class="nav-toggle" id="nav-toggle" style="display: none;">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#revisaoModal">Gerar Revisão</button>
+            </ul>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+
+        <div class="div-title" style="background-color: #0a203d42;
+        padding: 10px;
+        padding-bottom: 9px;
+        border-radius: 10px;
+        transform: scale(1.5);
+        ">
+        
+        <a href="#" class="a-link" style="color: #f1f1f1; font-weight: 600;">LISTA MESTRA DE POP's HOSPITAL MUNICIPAL 25 DE MAIO</a>
+        
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+
+                <div style="margin: auto; display: flex;">
+
+                    <div style="margin-left: 14%;">
+                        <img src="../static/assets/imgs/logo hospital.avif" alt="logo_hospital" style="width: 370px; height: 370px; border-radius: 8px; margin-top: -10px;">
+                    </div>
+
+                    <div class="about-caption">
+                        <div class="link-pop">
+                            <a href="/assistenciais" class="a-pop link" target="_blank">Pop's Assistenciais</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/medicacoes" class="a-pop link" target="_blank">Pop's Medicações</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/bloco_cirurgico" class="a-pop link" target="_blank">Pop's Bloco Cirúrgico (BC)</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/cme" class="a-pop link" target="_blank">Pop's Centro de Material Esterelizado (CME)</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/hemoterapia" class="a-pop link" target="_blank">Pop's Hemoterapia</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/limpeza_desinfeccao" class="a-pop link" target="_blank">Pop's Limpeza e Desinfecção</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/funcao_respiratoria" class="a-pop link" target="_blank">Pop's Função Respiratória</a>
+                        </div>
+                    </div> 
+
+                    <div class="about-caption">
+                        <div class="link-pop">
+                            <a href="/farmacia" class="a-pop link" target="_blank">Pop's Farmácia</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/medicacoes" class="a-pop link" target="_blank">Pop's Medicações</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/bloco_cirurgico" class="a-pop link" target="_blank">Pop's Bloco Cirúrgico (BC)</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/cme" class="a-pop link" target="_blank">Pop's Centro de Material Esterelizado (CME)</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/hemoterapia" class="a-pop link" target="_blank">Pop's Hemoterapia</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/limpeza_desinfeccao" class="a-pop link" target="_blank">Pop's Limpeza e Desinfecção</a>
+                        </div>
+                        <div class="link-pop">
+                            <a href="/funcao_respiratoria" class="a-pop link" target="_blank">Pop's Função Respiratória</a>
+                        </div>
+                    </div> 
+
+                </div>                  
+                
+
+                <div class="msg">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            <div class="alert-container">
+                                {% for category, message in messages %}
+                                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <div class="modal fade" id="revisaoModal" tabindex="-1" aria-labelledby="revisaoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modal-alter">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="revisaoModalLabel">Revisão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="/save_revisao" method="post">
+                    <div class="modal-body">
+                        <div style="margin-bottom: 32px; margin-top: 20px;">
+                            <label class="label" for="">Cód do Documento</label>
+                            <input type="text" class="form-control" name="co_doc" id="co_doc" maxlength="100" required>
+                        </div>
+
+                        <div style="margin-bottom: 32px;">
+                            <label class="label" for="">Nome do Documento</label>
+                            <input type="text" class="form-control" name="no_documento" id="no_documento" maxlength="150" required>
+                        </div>
+
+                        <div style="margin-bottom: 32px;">
+                            <label class="label" for="">Autor</label>
+                            <input type="text" class="form-control" name="no_autor" id="no_autor" maxlength="100" required>
+                        </div>
+
+                        <div style="margin-bottom: 32px;">
+                            <label class="label" for="">Revisões</label>
+                            <input type="number" class="form-control" name="nu_revisoes" id="nu_revisoes" required>
+                        </div>
+
+                        <div style="margin-bottom: 32px;">
+                            <label class="label" for="">Ultima Revisão</label>
+                            <input type="date" class="form-control" name="dt_revisao" id="dt_revisao" required>
+                        </div>
+
+                        <div style="margin-bottom: 32px; float: inline-end;">
+                            <button type="submit" class="btn btn-success">Salvar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- core  -->
+    <script src="static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="static/assets/js/meyawo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Encontra todas as alertas na página
+            const alerts = document.querySelectorAll('.alert');
+
+            alerts.forEach(alert => {
+                // Define um timeout para remover o alerta após 2 segundos
+                setTimeout(() => {
+                    alert.classList.remove('show');
+                    alert.classList.add('fade');
+                    setTimeout(() => {
+                        alert.remove();
+                    }, 150); // Tempo necessário para a animação de desaparecimento
+                }, 2000); // Tempo para esperar antes de remover
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const textElement = document.getElementById('text');
+            const textInput = document.getElementById('text-input');
+            const editButton = document.getElementById('edit-button');
+            const saveButton = document.getElementById('save-button');
+
+            // Função para carregar o texto salvo do localStorage
+            function loadText() {
+                const savedText = localStorage.getItem('savedText');
+                if (savedText) {
+                    textElement.textContent = savedText;
+                }
+            }
+
+            // Função para salvar o texto no localStorage e atualizar o elemento
+            function saveText() {
+                const newText = textInput.value;
+                localStorage.setItem('savedText', newText);
+                textElement.textContent = newText;
+                textInput.classList.add('hidden');
+                textElement.classList.remove('hidden');
+                editButton.classList.remove('hidden');
+                saveButton.classList.add('hidden');
+            }
+
+            // Configura o botão de edição
+            editButton.addEventListener('click', () => {
+                textInput.value = textElement.textContent;
+                textInput.classList.remove('hidden');
+                textElement.classList.add('hidden');
+                editButton.classList.add('hidden');
+                saveButton.classList.remove('hidden');
+            });
+
+            // Configura o botão de salvamento
+            saveButton.addEventListener('click', () => {
+                saveText();
+            });
+
+            // Carrega o texto salvo ao carregar a página
+            loadText();
+        });
+    </script>
+
+    <!--
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('nav-toggle');
+            let sequence = '';
+            const secretCode = '365941';
+
+            document.addEventListener('keydown', function(event) {
+                // Verifica se a tecla ALT está pressionada
+                if (event.altKey) {
+                    // Verifica se o que foi digitado é um número
+                    if (!isNaN(event.key)) {
+                        sequence += event.key;
+                        // Verifica se a sequência está correta
+                        if (sequence === secretCode) {
+                            navToggle.style.display = 'block'; // Mostra o link
+                            sequence = ''; // Reseta a sequência
+                        } else if (!secretCode.startsWith(sequence)) {
+                            sequence = ''; // Reseta se a sequência estiver incorreta
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Pop's Limpeza e Desinfecção</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="static/assets/css/meyawo.css">
+    <link rel="stylesheet" href="../static/assets/css/assistenciais.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20" id="top">
+
+        <div class="container">
+            
+            <ul class="nav">
+                <li class="item">
+                    <button class="btn btn-danger" id="edit-button-6">Editar</button>
+                </li>
+                <li class="item">
+                    <button class="btn btn-success" id="save-button-6" style="display: none;">Salvar</button>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic" style="display: none;">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+
+        <div style="display: flex; font-size: 16px; margin-top: 89px;">
+            <div>
+                <ul>
+                    <li class="item">
+                        <a class="link" href="#section-181">SMS SE 01 Limpeza da Geladeira de medicação e Insumos Hospitalares</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-182">SMS SE 02 Limpeza e Desinfecção de Equipamentos Eletrônicos</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-183">SMS SE 03 Limpeza e Desinfecção do Mobiliário</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-184">SMS SE 04 Limpeza e Desinfecção de Superfícies, Macas e Cadeiras de Rodas</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-185">SMS SE 05 Limpeza e Desinfecção de Seringa de Vidro</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-186">SMS SE 06 Limpeza e Desinfecção do Laringoscópio</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-187">SMS SE 07 Limpeza e Desinfecção do Otoscópio</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-188">SMS SE 08 Limpeza e Desinfecção de Materiais Ventilatórios</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-189">SMS SE 09 Limpeza e Desinfecção de Almotolias</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-190">SMS SE 10 Limpeza de Comadre, Marreco, Bacia, Balde e Jarro</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-191">SMS SE 11 Limpeza do Instrumental Cirúrgico</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-192">SMS SE 12 Fricção Antisséptica das Mãos (Com Preparações Alcoólicas)</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-193">SMS SE 13 Higienização Concorrente do Box (Urgência) ou Leito (Unidade de Internação)</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-194">SMS SE 14 Higienização Terminal do Box (Urgência) ou Leito (Unidade de Internação)</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-195">SMS SE 15 Desinfecção das Bancadas</a>
+                    </li>
+                    
+                </ul>
+            </div>           
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+     
+    <section class="section section-2" id="section-181" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza da Geladeira de medicação e Insumos Hospitalares</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector181" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame181" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-2" id="section-182" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção de Equipamentos Eletrônicos</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector182" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame182" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-2" id="section-183" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção do Mobiliário</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector183" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame183" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section section-2" id="section-184" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção de Superfícies, Macas e Cadeiras de Rodas</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector184" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame184" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section section-2" id="section-185" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção de Seringa de Vidro</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector185" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame185" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section section-2" id="section-186" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção do Laringoscópio</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector186" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame186" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section section-2" id="section-187" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção do Otoscópio</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector187" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame187" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-188" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção de Materiais Ventilatórios</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector188" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame188" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-189" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza e Desinfecção de Almotolias</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector189" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame189" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-190" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza de Comadre, Marreco, Bacia, Balde e Jarro</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector190" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame190" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-191" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Limpeza do Instrumental Cirúrgico</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector191" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame191" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section section-2" id="section-192" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Fricção Antisséptica das Mãos (Com Preparações Alcoólicas)</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector192" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame192" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section section-2" id="section-193" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Higienização Concorrente do Box (Urgência) ou Leito (Unidade de Internação)</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector193" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame193" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-194" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Higienização Terminal do Box (Urgência) ou Leito (Unidade de Internação)</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector194" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame194" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section section-2" id="section-195" data-page="page6">
+        <div class="card card-conteudo card-conteudo-6 editable">
+            <div style="display: flex;">
+                <h4>Desinfecção das Bancadas</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector195" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame195" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of about section -->
+
+    <div id="edit-modal" style="display: none;">
+        <textarea id="textarea-edit" rows="4" cols="50"></textarea>
+        <button id="save-button">Salvar</button>
+    </div>
+
+    <!-- core  -->
+    <script src="static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="static/assets/js/meyawo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggles = document.querySelectorAll('.div-oculta'); // Seleciona todas as divs ocultas
+            let sequence = '';
+            const secretCode = '365941';
+            const resetDelay = 1000; // tempo em milissegundos para resetar a sequência
+        
+            // Função para ocultar as divs
+            const hideDivs = () => {
+                navToggles.forEach(navToggle => {
+                    navToggle.style.display = 'none'; // Oculta todas as divs
+                });
+            };
+        
+            const resetSequence = () => {
+                sequence = ''; // Reseta a sequência
+            };
+        
+            document.addEventListener('keydown', function(event) {
+                // Verifica se a tecla ALT está pressionada
+                if (event.altKey && !isNaN(event.key)) {
+                    sequence += event.key; // Adiciona a tecla à sequência
+                    
+                    // Verifica se a sequência está correta
+                    if (sequence === secretCode) {
+                        navToggles.forEach(navToggle => {
+                            navToggle.style.display = 'flex'; // Mostra todas as divs com display flex
+                        });
+                        resetSequence(); // Reseta a sequência
+                    } else if (!secretCode.startsWith(sequence)) {
+                        resetSequence(); // Reseta se a sequência estiver incorreta
+                    }
+        
+                    // Reseta a sequência após um atraso
+                    clearTimeout(window.resetTimeout); // Limpa o timeout anterior
+                    window.resetTimeout = setTimeout(resetSequence, resetDelay);
+                }
+        
+                // Se a tecla ESC for pressionada, oculta as divs
+                if (event.key === 'Escape') {
+                    hideDivs(); // Chama a função para ocultar as divs
+                    resetSequence(); // Reseta a sequência
+                }
+            });
+        
+            // Ocultar divs inicialmente
+            hideDivs();
+        });
+        </script>
+        
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.section');
+
+        sections.forEach(section => {
+            const sectionId = section.getAttribute('id').split('-')[1];  // Extrai o número do ID da seção
+            const pageIdentifier = section.getAttribute('data-page'); // Identificador da página
+            const pdfSelector = section.querySelector('.form-select'); // Certifique-se que a classe é correta
+            const pdfFrame = section.querySelector('.pdfFrame'); // Certifique-se que a classe é correta
+
+            // Carregar a seleção do PDF ao carregar a página
+            fetch(`/get_selection/${sectionId}/${pageIdentifier}`) // Incluindo page_identifier
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.selected_pdf) {
+                        pdfSelector.value = data.selected_pdf;
+                        pdfFrame.src = `http://192.168.1.25:5099/pdfs/${data.selected_pdf}`; // Ajuste o caminho conforme necessário
+                    }
+                })
+                .catch(error => console.error('Erro ao carregar a seleção do PDF:', error));
+
+            // Salvar a seleção do PDF ao mudar a opção
+            pdfSelector.addEventListener('change', function() {
+                const selectedPdf = pdfSelector.value;
+
+                // Salvar a seleção do PDF com base no identificador da página
+                fetch('/save_selection', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        section_id: sectionId,
+                        selected_pdf: selectedPdf,
+                        page_identifier: pageIdentifier // Enviar o identificador da página
+                    })
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data.message);  // Pode ser usado para exibir uma notificação ao usuário
+                })
+                .catch(error => console.error('Erro ao salvar a seleção do PDF:', error));
+
+                // Atualizar o iframe com o PDF selecionado
+                pdfFrame.src = `http://192.168.1.25:5099/pdfs/${selectedPdf}`;  // Ajuste o caminho conforme necessário
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
