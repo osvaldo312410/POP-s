@@ -205,14 +205,71 @@ def funcao_respiratoria():
 
 @app.route('/farmacia')
 def farmacia():
+    response = requests.get('http://192.168.1.25:5099/farmacia')
+    pdfs = response.json()
+
+    return render_template('farmacia.html', pdfs=pdfs)
+
+
+
+@app.route('/ccih')
+def ccih():
     # Requisição diretamente para a subpasta "farmacia"
-    response = requests.get('http://192.168.1.140:5088/farmacia')
+    response = requests.get('http://192.168.1.25:5099/ccih')
     
     if response.status_code == 404:
         return "Erro: Subpasta não encontrada", 404
     
     pdfs = response.json()
-    return render_template('farmacia.html', pdfs=pdfs)
+    return render_template('ccih.html', pdfs=pdfs)
+
+
+@app.route('/servico_social')
+def servico_social():
+    # Requisição diretamente para a subpasta "farmacia"
+    response = requests.get('http://192.168.1.140:5099/servico_social')
+    
+    if response.status_code == 404:
+        return "Erro: Subpasta não encontrada", 404
+    
+    pdfs = response.json()
+    return render_template('servico_social.html', pdfs=pdfs)
+
+
+@app.route('/higienizacao')
+def higienizacao():
+    # Requisição diretamente para a subpasta "farmacia"
+    response = requests.get('http://192.168.1.25:5099/higienizacao')
+    
+    if response.status_code == 404:
+        return "Erro: Subpasta não encontrada", 404
+    
+    pdfs = response.json()
+    return render_template('higienizacao.html', pdfs=pdfs)
+
+
+@app.route('/laboratorio')
+def laboratorio():
+    # Requisição diretamente para a subpasta "farmacia"
+    response = requests.get('http://192.168.1.25:5099/laboratorio')
+    
+    if response.status_code == 404:
+        return "Erro: Subpasta não encontrada", 404
+    
+    pdfs = response.json()
+    return render_template('laboratorio.html', pdfs=pdfs)
+
+
+@app.route('/pscicologia')
+def pscicologia():
+    # Requisição diretamente para a subpasta "farmacia"
+    response = requests.get('http://192.168.1.25:5099/pscicologia')
+    
+    if response.status_code == 404:
+        return "Erro: Subpasta não encontrada", 404
+    
+    pdfs = response.json()
+    return render_template('pscicologia.html', pdfs=pdfs)
 
 
 
