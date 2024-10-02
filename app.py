@@ -227,7 +227,7 @@ def ccih():
 @app.route('/servico_social')
 def servico_social():
     # Requisição diretamente para a subpasta "farmacia"
-    response = requests.get('http://192.168.1.140:5099/servico_social')
+    response = requests.get('http://192.168.1.25:5099/servico_social')
     
     if response.status_code == 404:
         return "Erro: Subpasta não encontrada", 404

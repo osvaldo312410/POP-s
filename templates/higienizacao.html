@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Pop's CCIH</title>
+    <title>Pop's Higienização</title>
     <!-- font icons -->
     <link rel="stylesheet" href="static/assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -25,10 +25,10 @@
             
             <ul class="nav">
                 <li class="item">
-                    <button class="btn btn-danger" id="edit-button-5">Editar</button>
+                    <button class="btn btn-danger" id="edit-button-2">Editar</button>
                 </li>
                 <li class="item">
-                    <button class="btn btn-success" id="save-button-5" style="display: none;">Salvar</button>
+                    <button class="btn btn-success" id="save-button-2" style="display: none;">Salvar</button>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic" style="display: none;">
@@ -42,38 +42,41 @@
     <!-- page header -->
     <header id="home" class="header">
 
-        <div style="display: flex; font-size: 16px; margin-top: -180px;">
+        <div style="display: flex; font-size: 16px; margin-top: -150px;">
             <div>
                 <ul>
                     <li class="item">
-                        <a class="link" href="#section-229">SMS CCIH 01 Política de utilização de Antimicrobianos</a>
+                        <a class="link" href="#section-284">SMS SHH 01 Padrão serviço de Limpeza</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-230">SMS CCIH 02 Antibiótico profilaxia cirúrgica</a>
+                        <a class="link" href="#section-285">SMS SHH 02 RX</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-231">SMS CCIH 03 Auditoria de ATB</a>
+                        <a class="link" href="#section-286">SMS SHH 03 Bloco Cirurgico</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-232">SMS CCIH 04 Medidas de Precaução e Isolamento</a>
+                        <a class="link" href="#section-287">SMS SHH 04 Emergência COVID-19</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-233">SMS CCIH 05 Plano de enfrentamento da infecção pelo novo Coronavírus - SARS-CoV-2</a>
+                        <a class="link" href="#section-288">SMS SHH 05 EPI</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-234">SMS CCIH 06 Limpeza e desenfecção de Brinquedos</a>
+                        <a class="link" href="#section-289">SMS SHH 06 Limpeza das Mãos</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-235">SMS CCIH 07 Fluxo de solicitação de antimicrobianos de uso restrito</a>
+                        <a class="link" href="#section-290">SMS SHH 07 Lavanderia</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-236">SMS CCIH 08 Limpeza e Desenfecção de Superfícies e Equipamentos</a>
+                        <a class="link" href="#section-300">SMS SHH 08 Rouparia</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-237">SMS CCIH 09 Troca de Dispositivos</a>
+                        <a class="link" href="#section-301">SMS SHH 09 Coleta de Lixo</a>
                     </li>
                     <li class="item">
-                        <a class="link" href="#section-238">SMS CCIH 10 Protocolo de Sepse</a>
+                        <a class="link" href="#section-302">SMS SHH 10 Limpeza de CME</a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="#section-303">SMS SHH 11 Limpeza de Leito</a>
                     </li>
                 </ul>
             </div>
@@ -82,12 +85,12 @@
 
     <!-- about section -->
      
-    <section class="section section-2" id="section-229" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-284" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Política de utilização de Antimicrobianos</h4>
+                <h4>Padrão serviço de Limpeza</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector172" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector90" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -101,17 +104,17 @@
             </div>
 
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame172" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame90" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
     
-    <section class="section section-2" id="section-230" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-285"  data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Antibiótico profilaxia cirúrgica</h4>
+                <h4>RX</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector173" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector91" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -126,17 +129,17 @@
             
 
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame173" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame91" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
     
-    <section class="section section-2" id="section-231" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-286" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Auditoria de ATB</h4>
+                <h4>Bloco Cirurgico</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector174" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector92" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -150,19 +153,19 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame174" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame92" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
 
 
 
-    <section class="section section-2" id="section-232" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-287" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Medidas de Precaução e Isolamento</h4>
+                <h4>Emergência COVID-19</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector175" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector93" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -176,19 +179,19 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame175" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame93" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
 
 
 
-    <section class="section section-2" id="section-233" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-288" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Plano de enfrentamento da infecção pelo novo Coronavírus - SARS-CoV-2</h4>
+                <h4>EPI</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector176" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector94" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -202,19 +205,19 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame176" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame94" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
 
 
 
-    <section class="section section-2" id="section-234" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-289" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Limpeza e desenfecção de Brinquedos</h4>
+                <h4>Limpeza das Mãos</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector177" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector95" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -228,19 +231,19 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame177" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame95" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
 
 
 
-    <section class="section section-2" id="section-235" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-290" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Fluxo de solicitação de antimicrobianos de uso restrito</h4>
+                <h4>Lavanderia</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector178" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector96" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -254,7 +257,7 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame178" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame96" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
@@ -262,12 +265,12 @@
 
 
 
-    <section class="section section-2" id="section-236" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-300" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Limpeza e Desenfecção de Superfícies e Equipamentos</h4>
+                <h4>Rouparia</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector179" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector97" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -281,7 +284,7 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame179" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame97" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
@@ -289,12 +292,12 @@
 
 
 
-    <section class="section section-2" id="section-237" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+    <section class="section section-2" id="section-301" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Troca de Dispositivos</h4>
+                <h4>Coleta de Lixo</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector180" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector98" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -308,19 +311,20 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame180" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame98" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
 
 
 
-    <section class="section section-2" id="section-238" data-page="page5">
-        <div class="card card-conteudo card-conteudo-5 editable">
+
+    <section class="section section-2" id="section-302" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
             <div style="display: flex;">
-                <h4>Protocolo de Sepse</h4>
+                <h4>Limpeza de CME</h4>
                 <div style="display: flex;" class="div-oculta">
-                    <select class="form-select pdfSelector" id="pdfSelector180" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                    <select class="form-select pdfSelector" id="pdfSelector99" style="margin-left: 100px; font-size: 14px; height: 25px;">
                         {% for pdf in pdfs %}
                             <option value="{{ pdf }}">{{ pdf }}</option>
                         {% endfor %}
@@ -334,10 +338,39 @@
             </div>
             
             <div id="pdfViewer" style="margin-top: 20px;">
-                <iframe class="pdfFrame" id="pdfFrame180" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+                <iframe class="pdfFrame" id="pdfFrame99" style="width: 100%; height: 700px;" frameborder="0"></iframe>
             </div>
         </div>
     </section>
+
+
+
+
+    <section class="section section-2" id="section-303" data-page="page2">
+        <div class="card card-conteudo card-conteudo-2 editable">
+            <div style="display: flex;">
+                <h4>Limpeza de Leito</h4>
+                <div style="display: flex;" class="div-oculta">
+                    <select class="form-select pdfSelector" id="pdfSelector99" style="margin-left: 100px; font-size: 14px; height: 25px;">
+                        {% for pdf in pdfs %}
+                            <option value="{{ pdf }}">{{ pdf }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <a class="link" href="#home" style="margin-left: auto;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div id="pdfViewer" style="margin-top: 20px;">
+                <iframe class="pdfFrame" id="pdfFrame99" style="width: 100%; height: 700px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- end of about section -->
 
@@ -353,7 +386,6 @@
     <script src="static/assets/js/meyawo.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -427,7 +459,7 @@
                 .then(data => {
                     if (data.selected_pdf) {
                         pdfSelector.value = data.selected_pdf;
-                        pdfFrame.src = `http://192.168.1.25:5099/ccih/${data.selected_pdf}`; // Ajuste o caminho conforme necessário
+                        pdfFrame.src = `http://192.168.1.25:5099/higienizacao/${data.selected_pdf}`; // Ajuste o caminho conforme necessário
                     }
                 })
                 .catch(error => console.error('Erro ao carregar a seleção do PDF:', error));
@@ -460,11 +492,12 @@
                 .catch(error => console.error('Erro ao salvar a seleção do PDF:', error));
 
                 // Atualizar o iframe com o PDF selecionado
-                pdfFrame.src = `http://192.168.1.25:5099/ccih/${selectedPdf}`;  // Ajuste o caminho conforme necessário
+                pdfFrame.src = `http://192.168.1.25:5099/higienizacao/${selectedPdf}`;  // Ajuste o caminho conforme necessário
             });
         });
     });
 </script>
+
 
 
 </body>
